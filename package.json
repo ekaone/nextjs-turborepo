@@ -1,0 +1,24 @@
+{
+  "name": "nextjs-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/config/*",
+    "packages/shared/*"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "packageManager": "yarn@1.22.17",
+  "devDependencies": {
+    "turbo": "^1.6.3"
+  },
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean"
+  }
+}
